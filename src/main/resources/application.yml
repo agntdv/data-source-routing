@@ -1,0 +1,26 @@
+#spring.datasource.url=jdbc:h2:file:./data/first
+#spring.datasource.driverClassName=org.h2.Driver
+#spring.datasource.username=user
+#spring.datasource.password=password
+#spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+app:
+  databases:
+    configurations:
+      h2-pa:
+        url: jdbc:h2:file:./data/pa
+        driver: org.h2.Driver
+        username: sa
+        password:
+      h2-pb:
+        url: jdbc:h2:file:./data/pb
+        driver: org.h2.Driver
+        username: sa
+        password:
+      h2-pc:
+        url: jdbc:h2:file:./data/pc
+        driver: org.h2.Driver
+        username: sa
+        password:
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
